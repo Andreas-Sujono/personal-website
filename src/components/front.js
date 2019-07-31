@@ -63,7 +63,7 @@ export default class Front extends React.Component{
                 spy={true}
                 smooth={true}
                 offset={-50}>
-                <img src="./src/logo.png" alt="Logo" />
+                <img src="./static/logo.png" alt="Logo" />
                 </Link>
           </div>
           <div>
