@@ -334,30 +334,25 @@ background: linear-gradient(180deg, rgba(1,5,45,1) 0%, rgba(0,90,158,1) 40%, rgb
 	box-shadow: 1px 1px 3px 2px lightblue;
 
 	margin: 0 auto;position: relative;top: 30px;
-	-webkit-animation:float 2s infinite ease-in-out;
-	-moz-animation:float 2s infinite ease-in-out;
-	-ms-animation:float 2s infinite ease-in-out;
-	-o-animation:float 2s infinite ease-in-out;
 	animation:float 2s infinite ease-in-out;
 }
 
 
 .box_shadow{
 	position: relative; height: 17px; width:80%;background: #999; opacity: 0.5; border-radius: 100%; margin: 0 0 0% 10%; top: 110px;
-	-webkit-animation:react 2s infinite ease-in-out;
-	-moz-animation:react 2s infinite ease-in-out;
-	-ms-animation:react 2s infinite ease-in-out;
-	-o-animation:react 2s infinite ease-in-out;
-	animation:react 2s infinite ease-in-out;}
-
-		@-webkit-keyframes float{
-			50% {top: 52px;} 100% {top: 30px;}
-		}
-		@-webkit-keyframes react{
-			50% {margin: 0 0% 0% 20%; opacity: 0.9;} 100% {margin: 0 0 0% 10%; opacity: 0.4;}
-
+	animation:react 2s infinite ease-in-out;
 }
 
+		
+
+
+@keyframes float{
+	50% {top: 52px;} 
+	100% {top: 30px;}
+}
+@keyframes react{
+	50% {margin: 0 0% 0% 20%; opacity: 0.9;} 100% {margin: 0 0 0% 10%; opacity: 0.4;}
+}
 
 
 
