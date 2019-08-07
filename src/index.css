@@ -601,12 +601,17 @@ background: linear-gradient(180deg, rgba(255,240,207,1) 0%, rgba(202,220,255,0.3
 }
 
 
-@media Screen and (max-width: 750px){
+@media Screen and (max-width: 700px){
 	.windowAppear{width: 90%;top:60px;height: 600px;}
 	.footer h2{font-size: 30px;}
 	.footer .side-left span{font-size: 28px;}
-	.skills .skillImage .logo{left: 25%;}
+	.skills .skillImage .logo{left: 27%;}
 	.footer .boxOver{left: 0;}
+}
+@media Screen and (max-width: 450px){
+	.skills .skillImage .logo{left: 23%;}
+	.skills .skillImage img{min-height: 220px;}
+	.bundle{top:120px;}
 }
 
 
