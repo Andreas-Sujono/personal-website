@@ -2,14 +2,6 @@ import React, {Component} from 'react'
 import Fade from 'react-reveal/Fade';
 
 export default class Footer extends Component{
-	constructor(){
-		super();
-
-		this.state = {
-			phone: false,
-			email:false
-		}
-	}
 
 	render(){
 
@@ -19,16 +11,7 @@ export default class Footer extends Component{
 				<Fade>
 				<div className="side-left">
 					<h2>Contact</h2>
-					<span className="fa fa-phone" onClick={() => 
-						this.setState(prevState => {return {
-								phone: !prevState.phone,
-								email:false
-							}
-						}
-						)
-					}>
-						</span> 
-
+			
 					<a href="https://www.facebook.com/andreas.sujono.543" target="_blank">
 						<span className="fa fa-facebook-square facebok"></span>
 					</a>
@@ -37,14 +20,9 @@ export default class Footer extends Component{
 						<span className="fa fa-instagram instagram"></span> 
 					</a>
 
-					<span className="fa fa-envelope" onClick={() => 
-						this.setState(prevState => {return {
-								phone: false,
-								email:!prevState.email
-							}
-						}
-						)
-					}> </span>	
+					<a href="mailto:andr0075@e.ntu.edu.sg">
+						<span className="fa fa-envelope"> </span>	
+					</a>
 
 
 					<a href="https://www.linkedin.com/in/andreas-sujono-5b0b07164/" target="_blank">
@@ -54,21 +32,17 @@ export default class Footer extends Component{
 						<span className="fa fa-github"></span>
 					</a>
 					
+				</div>
 
-					
+				<div className="side-center">
+					<span> Email : ANDR0075@e.ntu.edu.sg </span>
+					<br/>
+					<span> Phone: +65 83066172 </span>
+
 				</div>
 				</Fade>
 
-				
-				<div className="boxOver">
-					{this.state.email ? <span>	email: andreassujono@gmail.com </span> : null}
-					{this.state.phone ? <span>	phone: +65 83066172 </span> : null}
-				</div>
-
-
-
-
-				<div className="bottom">
+				<div className="bottom" style={{textAlign:'center'}}>
 					<p>Created with &nbsp;&nbsp; <i className="fa fa-heart"></i>&nbsp;&nbsp;&nbsp;&nbsp;by Andreas Sujono</p>
 
 

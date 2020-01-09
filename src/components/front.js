@@ -63,7 +63,8 @@ export default class Front extends React.Component{
                 spy={true}
                 smooth={true}
                 offset={-50}>
-                <img src="./static/logo.png" alt="logo" />
+
+                <img src="./static/logo.png" alt="Logo" />
                 </Link>
           </div>
           <div>
@@ -124,7 +125,9 @@ export default class Front extends React.Component{
         </div>
 
 				<Particles className='particles' params={particlesOptions} />
-
+        <div className="frontContent">
+          
+        </div>
         
         <div className="arrow-down">
           <Link

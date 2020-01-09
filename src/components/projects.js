@@ -8,28 +8,32 @@ export default class Projects extends  Component{
 			project1: {
 				img:'http://img.everychina.com/nimg/b4/cc/8cada59fc798c0d18d1f89799c91-300x300-0/ultrasonic_module_remote_control_robot_car_for_arduino_starters.jpg',
 				title:'Arduino Car Controller',
-				details:'I built the remote control car with bluetooth controller using Arduino microcontroller.\n \
-						Hardware needed: \n bluetooth module HC05, Arduino uno, driver module L298N, 12V High Torque DC Motor, 3.3v Batteries '
+				details:'built the remote control car with bluetooth controller using Arduino microcontroller.\n \
+						Hardware needed: \n1) bluetooth module HC05\n2) Arduino uno\n3) driver module L298N\n4) 12V High Torque DC Motor\n5) 3.3v Batteries '
 			},
 			project2: {
-				img:'https://images.idgesg.net/images/article/2018/08/iot_internet_of_things_wireless_network_devices_mapping_connections_by_plarguedoctor_gettyimages-946094534_1200x800-100768194-large.3x2.jpg',
-				title:'Website Templates',
-				details:'I\'ve made several website templates'
+				img:'./static/togo.png',
+				title:'Travel Mobile App',
+				details:'Developed a mobile app using react native. Created all the design by my own including the splash screen, login page, homepage, and other page.\n\
+				Using several API from google to find the geolocation and to find the places around'
 			},
 			project3: {
-				img:'http://imuscomputercollege.net.ph/wp-content/uploads/2014/09/programming.jpg',
-				title:'Title',
-				details:'Some quick example text to build on the card title and make up the bulk of the card\'s content'
+				img:'./static/website2.png',
+				title:'News Web App',
+				details:'Made a news Web Application using ReactJs for the front end and Python for the backend. Implemented grid for the news appearance\
+				Created API also for the user to create , update, or delete the news'
 			},
 			project4: {
-				img:'https://www.onlc.com/blog/wp-content/uploads/2017/07/ONLC-2017-4-637x350.png',
-				title:'Title',
-				details:'Some quick example text to build on the card title and make up the bulk of the card\'s content'
+				img:'./static/pytorch.png',
+				title:'Deep Learning Research',
+				details:'Joined Deep Learning Research Team in NTU. Have survey a lot of paper and the latest method for Image blending. The purpose of this problem is to\
+				to combine some part of image to other image so it can be combined perfectly. it is similar like masking in photoshop, but we use deep learning specifically convolutional Neural Network'
 			},
 			project5: {
-				img:'https://www.extremetech.com/wp-content/uploads/2015/10/Servers1-640x354.jpg',
-				title:'Title',
-				details:'Some quick example text to build on the card title and make up the bulk of the card\'s content'
+				img:'./static/skintech.png',
+				title:'SkinTech',
+				details:'Built a web application and machine learning model to classify a skin image cancer whether it is benign or malignant. Developed Also several features like login and signup form, LiveChat using chatroll.\n\
+				\n\n\n\n\n submitted as hackaton project in NTU Hackaton 2019'
 			},
 			windowMid:{
 				appear:false,
@@ -43,6 +47,20 @@ export default class Projects extends  Component{
 	render(){
 		return(
 			<div className="projects" id="projects">
+				<hr style={{
+					width:'50px',
+					border:'1px solid grey'
+				}}/>
+				<hr style={{
+					width:'200px',
+					border:'1px solid grey'
+				}}/>
+				<hr style={{
+					width:'400px',
+					border:'1px solid grey'
+				}}/>
+				
+				
 				<div className="header"> Projects </div>
 
 				
@@ -135,7 +153,9 @@ export default class Projects extends  Component{
 								<div className="content">
 									<h2> {this.state.windowMid.project.title} </h2>
 									<p> 
-										{this.state.windowMid.project.details}
+										{this.state.windowMid.project.details.split('\n').map( x =>(
+											<div> {x} </div>
+										) )}
 									</p>
 								</div>
 							</div>

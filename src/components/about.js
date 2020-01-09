@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import Fade from 'react-reveal/Fade';
+import Divider from './divider.js'
 
 
 export default class About extends Component{
@@ -11,7 +12,7 @@ export default class About extends Component{
 	render(){
 		return(
 			<div className="about" id="about">
-
+				<Divider />
 				<div className="header">
 					<p> About Me </p>
 				</div>

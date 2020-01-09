@@ -19,7 +19,7 @@ body,html{
 	padding-top:10px;
 	padding-left: 20px;
 	font-size: 30px;
-	font-family: cursive;
+	font-family: 'Impact, Charcoal, sans-serif';
 	width: 100%;
 	background-color: rgba(10,2,60,0.5);
 	position: fixed;
@@ -83,12 +83,12 @@ body,html{
 	position: relative;
 	display: block;
 	margin:auto;
-	width: 480px;
-	height: 480px;
+	width: 350px;
+	height: 350px;
+	top:250px;
 	background-image: radial-gradient(circle, #00073b, #000834, #00082d, #000825, #00081d, #030618, #040413, #04030c, #050208, #050104, #030002, #000000);
 	border-radius: 50%;
 	z-index: 20;
-	top:150px;
 	border: 2px solid #1C1C1C;
 	box-shadow: 3px 3px 6px 3px silver;
 
@@ -97,7 +97,7 @@ body,html{
 .logo-animation .stroke1{
 	width:0px;
 	height: 20px;
-	top:220px;
+	top:150px;
 	background-color: silver;
 	transform: rotate(-70deg);
 	position: absolute;
@@ -111,8 +111,8 @@ body,html{
 	height: 20px;
 	background-color: silver;
 	position: absolute;
-	left: 190px;
-	top: 83px;
+	left: 125px;
+	top: 55px;
 	border-radius: 7px;
 	animation-name: stroke2;
 	animation-duration: 0.5s;
@@ -121,12 +121,12 @@ body,html{
 }
 
 .logo-animation .stroke3{
-	width:250px;
+	width: 200px;
 	height: 0px;
 	background-color: silver;
 	position: absolute;
-	top: 192px;
-	left: 187px;
+	top: 140px;
+	left: 125px;
 	transform: rotate(-70deg);
 	border-radius: 8px;
 	animation-name: stroke3;
@@ -140,8 +140,8 @@ body,html{
 	height: 20px;
 	background-color: silver;
 	position: absolute;
-	top: 260px;
-	left: 38px;
+	top: 192px;
+	left: 20px;
 	transform: rotate(20deg);
 	border-radius: 8px;
 	animation-name: stroke4;
@@ -155,8 +155,8 @@ body,html{
 	height: 20px;
 	background-color: silver;
 	position: absolute;
-	top:220px;
-	left: 50px;
+	top:163px;
+	left: 26px;
 	border-radius: 7px;
 	animation-name: stroke5;
 	animation-duration: 0.5s;
@@ -169,11 +169,11 @@ body,html{
 
 @keyframes stroke1{
 	0%{width: 0;}
-	100%{width: 300px;}
+	100%{width: 200px;}
 }
 @keyframes stroke2{
 	0%{width: 0;}
-	100%{width: 170px;}
+	100%{width: 140px;}
 }
 @keyframes stroke3{
 	0%{height: 0;}
@@ -181,80 +181,23 @@ body,html{
 }
 @keyframes stroke4{
 	0%{width: 0;}
-	100%{width: 250px;}
+	100%{width: 180px;}
 }
 @keyframes stroke5{
 	0%{width: 0;}
-	100%{width: 300px;}
+	100%{width: 240px;}
 }
 
-@media Screen and (max-width: 800px){
-	.bundle{
-		width: 350px;
-		height: 350px;
-		top:200px;
-	}
-	.arrow-down{
-		top: 330px;
-	}
-	.logo-animation .stroke1{
-	top:150px;
-	animation-name: stroke1;
-	}
-
-	@keyframes stroke1{
-	0%{width: 0;}
-	100%{width: 200px;}
-	}
-
-	.logo-animation .stroke2{
-	left: 125px;
-	top: 55px;
-	animation-name: stroke2;
-
-	}
-
-	@keyframes stroke2{
-	0%{width: 0;}
-	100%{width: 140px;}
-	}
-
-	.logo-animation .stroke3{
-	top: 140px;
-	left: 125px;
-	width: 200px;
-	animation-name: stroke3;
-	}
-
-	.logo-animation .stroke4{
-	top: 192px;
-	left: 20px;
-	animation-name: stroke4;
-
-	}
-
-	@keyframes stroke4{
-	0%{width: 0;}
-	100%{width: 180px;}
-	}
-
-	.logo-animation .stroke5{
-	top:163px;
-	left: 26px;
-	animation-name: stroke5;
-
-	}
-
-	@keyframes stroke5{
-	0%{width: 0;}
-	100%{width: 240px;}
-	}
-
+#front .frontContent{
+	color:white;
+	text-align: center;
+	margin-top: 230px;
+	font-size: 40px;
 }
 
 .arrow-down{
 	width: 100%;
-	margin-top: 280px;
+	margin-top: 500px;
 	cursor: pointer;
 }
 .arrow-down span{
@@ -265,16 +208,23 @@ body,html{
 	font-weight: bold;
 	opacity: 0;
 	cursor: pointer;
+	opacity:0;
 
-	animation-name: arrowShow;
-	animation-duration: 0.5s;
+	animation-name: blinkingArrow;
+	animation-duration: 1.5s;
 	animation-delay: 2.5s;
 	animation-fill-mode: forwards; 
+	animation-iteration-count:infinite;
 }
 
-@keyframes arrowShow{
-	0%{opacity: 0;}
-	100%{opacity: 1;}
+@keyframes blinkingArrow{
+	20%{
+		opacity:1;
+	}
+	80%{
+		opacity:0;
+	}
+	
 }
 
 
@@ -310,6 +260,7 @@ background: linear-gradient(180deg, rgba(1,5,45,1) 0%, rgba(0,90,158,1) 40%, rgb
 	display: block;
 	margin:auto;
 	box-shadow: 2px 2px 4px 4px snow;
+	border-radius: 50%;
 }
 
 .about .side-right{
@@ -364,8 +315,8 @@ background: linear-gradient(180deg, rgba(1,5,45,1) 0%, rgba(0,90,158,1) 40%, rgb
 	height: auto;
 	position: relative;
 	background: rgb(255,250,250);
-background: linear-gradient(180deg, rgba(255,250,250,1) 0%, rgba(255,246,226,1) 74%, rgba(255,240,206,1) 100%);
-	padding-bottom: 100px;
+	background: linear-gradient(180deg, rgba(255,250,250,1) 0%, rgba(255,246,226,1) 74%, rgba(255,240,206,1) 100%);
+	padding-bottom: 40px;
 	padding-top: 40px;
 }
 
@@ -374,11 +325,11 @@ background: linear-gradient(180deg, rgba(255,250,250,1) 0%, rgba(255,246,226,1) 
 	color: black;
 	text-align: center;
 	font-size: 50px;
-	font-family: cursive;
+	font-family: 'Impact, Charcoal, sans-serif';
 }
 
 .projects .projectsList{
-	width: 90%;
+	width: 70%;
 	margin:auto;
 }
 
@@ -391,6 +342,7 @@ background: linear-gradient(180deg, rgba(255,250,250,1) 0%, rgba(255,246,226,1) 
 .card img{
 	width: 100%;
 	min-height: 280px;
+	max-height: 300px;
 }
 
 .windowAppearBack{
@@ -445,6 +397,26 @@ background: linear-gradient(180deg, rgba(255,250,250,1) 0%, rgba(255,246,226,1) 
 }
 
 
+.middleContent{
+	width:100%;
+	height:300px;
+	background-image:url('https://wallpaperaccess.com/full/824718.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 100px;
+}
+.middleContent .text{
+	text-align: center;
+	color:white;
+	font-size: 36px;
+	background-color: rgba(255,240,250,0.1);
+	width: 100%;
+	height: 100px;
+	vertical-align: middle;
+	padding-top: 20px;
+}
 
 
 
@@ -455,7 +427,7 @@ background: linear-gradient(180deg, rgba(255,240,207,1) 0%, rgba(202,220,255,0.3
 	width: 100%;
 	min-height: 600px;
 	color: #383838;
-	padding-top: 50px;
+	padding-top: 20px;
 	padding-bottom: 100px;
 	padding-left: 20px;
 	padding-right:20px;
@@ -464,7 +436,7 @@ background: linear-gradient(180deg, rgba(255,240,207,1) 0%, rgba(202,220,255,0.3
 .skills .header{
 	text-align: center;
 	font-size: 50px;
-	font-family: cursive;
+	font-family: 'Impact, Charcoal, sans-serif';
 }
 
 .skills .skillList{
@@ -476,7 +448,7 @@ background: linear-gradient(180deg, rgba(255,240,207,1) 0%, rgba(202,220,255,0.3
 	font-size: 22px;
 	border:2px groove snow;
 	padding: 20px;
-	margin-top: 40px;
+	margin-top: 10px;
 }
 
 .skills .skillImage{
@@ -532,7 +504,7 @@ background: linear-gradient(180deg, rgba(255,240,207,1) 0%, rgba(202,220,255,0.3
 	min-height: 300px;
 	display: block;
 	margin:auto;
-	margin-top: 80px;
+	margin-top: 50px;
 
 }
 
@@ -542,7 +514,6 @@ background: linear-gradient(180deg, rgba(255,240,207,1) 0%, rgba(202,220,255,0.3
 	width: 100%;
 	height: 500px;
 	position: relative;
-	text-align: center;
 }
 
 .footer .side-left{
@@ -552,15 +523,13 @@ background: linear-gradient(180deg, rgba(255,240,207,1) 0%, rgba(202,220,255,0.3
 	left: 10%;
 	font-size: 22px;
 }
-@media Screen and (max-width: 650px){
-	.footer .side-left{
-		left: 0px;
-	}
-}
+
 .footer h2{
 	font-family: monospace;
 	margin-bottom: 20px;
 	font-size: 35px;
+	position: relative;
+	left: 40px;
 }
 
 .footer .side-left span {
@@ -571,6 +540,22 @@ background: linear-gradient(180deg, rgba(255,240,207,1) 0%, rgba(202,220,255,0.3
 .footer .side-left i:nth-child(1){
 	transform: rotate(180deg);
 	margin-top: 2px;
+}
+.footer .side-center{
+	color:white;
+	position: absolute;
+	bottom: 80px;
+	left:12%;
+}
+
+@media Screen and (max-width: 650px){
+	.footer .side-left{
+		left: 0px;
+	}
+	.footer .side-center{
+		left: 40px;
+	}
+	
 }
 
 .footer .bottom{
@@ -603,7 +588,7 @@ background: linear-gradient(180deg, rgba(255,240,207,1) 0%, rgba(202,220,255,0.3
 
 @media Screen and (max-width: 700px){
 	.windowAppear{width: 90%;top:60px;height: 600px;}
-	.footer h2{font-size: 30px;}
+	.footer h2{font-size: 36px;}
 	.footer .side-left span{font-size: 28px;}
 	.skills .skillImage .logo{left: 27%;}
 	.footer .boxOver{left: 0;}
@@ -612,6 +597,7 @@ background: linear-gradient(180deg, rgba(255,240,207,1) 0%, rgba(202,220,255,0.3
 	.skills .skillImage .logo{left: 23%;}
 	.skills .skillImage img{min-height: 220px;}
 	.bundle{top:120px;}
+	.skills .boxImage{min-height: 220px;}
 }
 
 

@@ -16,10 +16,10 @@ export default class Skills extends Component{
 
 				<Bounce>
 				<div className="skillList">
-					<div> <strong> Front End </strong> : HTML, CSS, Javascript, Bootstrap, ReactJs, D3.js </div>
+					<div> <strong> Front End </strong> : HTML, CSS, SASS, Javascript, Bootstrap, ReactJs</div>
 					<div> <strong> Back End </strong> : C, Python, Flask, NodeJs, ExpressJs </div>
-					<div> <strong> Database </strong> : SQL, MongoDB </div>
-					<div> <strong> Others </strong> : Unity3D, Arduino, Adobe Photoshop, Adobe Premiere </div>
+					<div> <strong> DataScience </strong> : Numpy, Pandas, Matplotlib, Seaborn, Pytorch </div>
+					<div> <strong> Others </strong> : Unity3D, Arduino, Adobe Premiere </div>
 				</div>
 				</Bounce>
 
@@ -51,7 +51,7 @@ export default class Skills extends Component{
 					<div className="col-md-4  col-sm-8 col-10" style={{margin:'auto'}}>
 						<div className="boxImage">
 							<div className="logo3 logo">
-								<a href="https://github.com/Andreas-Sujono" target="_blank">D3.Js</a>
+								<a href="https://github.com/Andreas-Sujono" target="_blank">PyTorch</a>
 							</div>
 							<img className="img3" src="./static/skill3.png" alt="image 3"/>
 						</div>
