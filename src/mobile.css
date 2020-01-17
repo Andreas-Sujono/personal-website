@@ -1,5 +1,6 @@
 @media Screen  and (max-width:760px){
 
+    
     #front .type{
         font-size: 24px;
     }
@@ -139,5 +140,12 @@
     .skills .skillImage .logo{
         top:45%;
         left:23%;
+    } 
+}
+
+@media Screen  and (max-width:450px){
+    #front .frontContent{
+        margin-top: 140px;
     }
 }
+

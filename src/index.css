@@ -14,9 +14,7 @@ body,html{
 	background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(1,10,48,1) 80%, rgba(0,0,42,1) 100%);
 	z-index: 10;
 }
-#front .frontContent{
-	padding-top: 10px;
-}
+
 #front .type{
 	color:grey;
 	font-size: 26px;
