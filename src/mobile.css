@@ -36,6 +36,16 @@
         width:200px;
     }
 
+    
+    .projects .projectsList{
+        width:90%;
+    }
+    .card{
+        width: 100%;
+        max-width: 300px;
+        margin:auto;
+        margin-top: 50px;
+    }
     .windowAppear .content h2{
         font-size: 22px;
     }
@@ -71,6 +81,6 @@
 @media Screen  and (max-width:600px){
     .skills .skillImage .logo{
         top:45%;
-        left:28%;
+        left:25%;
     }
 }
