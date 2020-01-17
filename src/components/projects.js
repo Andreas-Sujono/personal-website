@@ -47,18 +47,9 @@ export default class Projects extends  Component{
 	render(){
 		return(
 			<div className="projects" id="projects">
-				<hr style={{
-					width:'50px',
-					border:'1px solid grey'
-				}}/>
-				<hr style={{
-					width:'200px',
-					border:'1px solid grey'
-				}}/>
-				<hr style={{
-					width:'400px',
-					border:'1px solid grey'
-				}}/>
+				<hr className="hr1"/>
+				<hr className="hr2"/>
+				<hr className="hr3"/>
 				
 				
 				<div className="header"> Projects </div>

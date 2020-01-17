@@ -2,6 +2,14 @@
     #front .header{
         font-size: 22px;
     }
+
+    #front .menu-toggle{
+        font-size: 18px;
+    }
+    .arrow-down{
+        margin-top: 300px;
+    }
+
     .about .side-right .main-right{
         font-size: 16px;
     }
@@ -17,6 +25,15 @@
     .projects .header{
         font-size: 30px;
         margin-bottom: -20px;
+    }
+    .projects .hr1{
+        width:25px;
+    }
+    .projects .hr2{
+        width:100px;
+    }
+    .projects .hr3{
+        width:200px;
     }
 
     .windowAppear .content h2{
@@ -49,4 +66,11 @@
         font-size: 14px;
     }
 
+}
+
+@media Screen  and (max-width:600px){
+    .skills .skillImage .logo{
+        top:45%;
+        left:28%;
+    }
 }
