@@ -1,4 +1,57 @@
 @media Screen  and (max-width:760px){
+
+    .bundle{
+        width:250px;
+        height: 250px;
+    }
+    .logo-animation .stroke1{
+        top:120px;
+        left:15px;
+        height: 15px;
+    }
+    .logo-animation .stroke2{
+        left: 87px;
+        top: 66px;
+        height: 15px;
+    }
+    .logo-animation .stroke3{
+        width: 110px;
+        top: 110px;
+        left: 105px;
+        height: 15px;
+    }
+    .logo-animation .stroke4{
+        top: 139px;
+        left: 26px;
+        height: 15px;
+    }
+    .logo-animation .stroke5{
+        top:118px;
+        left: 30px;
+        height: 15px;
+    }
+
+    @keyframes stroke1{
+        0%{width: 0;}
+        100%{width: 120px;}
+    }
+    @keyframes stroke2{
+        0%{width: 0;}
+        100%{width: 100px;}
+    }
+    @keyframes stroke3{
+        0%{height: 0;}
+        100%{height: 20px;}
+    }
+    @keyframes stroke4{
+        0%{width: 0;}
+        100%{width: 130px;}
+    }
+    @keyframes stroke5{
+        0%{width: 0;}
+        100%{width: 160px;}
+    }
+
     #front .header{
         font-size: 22px;
     }
@@ -81,6 +134,6 @@
 @media Screen  and (max-width:600px){
     .skills .skillImage .logo{
         top:45%;
-        left:25%;
+        left:23%;
     }
 }
