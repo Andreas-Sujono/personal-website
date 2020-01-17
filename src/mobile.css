@@ -1,9 +1,13 @@
 @media Screen  and (max-width:760px){
 
+    #front .type{
+        font-size: 24px;
+    }
     .bundle{
         width:250px;
         height: 250px;
     }
+    
     .logo-animation .stroke1{
         top:120px;
         left:15px;
@@ -60,7 +64,7 @@
         font-size: 18px;
     }
     .arrow-down{
-        margin-top: 300px;
+        margin-top: 200px;
     }
 
     .about .side-right .main-right{

@@ -14,6 +14,13 @@ body,html{
 	background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(1,10,48,1) 80%, rgba(0,0,42,1) 100%);
 	z-index: 10;
 }
+#front .frontContent{
+	padding-top: 10px;
+}
+#front .type{
+	color:grey;
+	font-size: 26px;
+}
 #front .header{
 	color: white;
 	padding-top:10px;
@@ -85,7 +92,7 @@ body,html{
 	margin:auto;
 	width: 350px;
 	height: 350px;
-	top:250px;
+	top:200px;
 	background-image: radial-gradient(circle, #00073b, #000834, #00082d, #000825, #00081d, #030618, #040413, #04030c, #050208, #050104, #030002, #000000);
 	border-radius: 50%;
 	z-index: 20;
@@ -197,7 +204,7 @@ body,html{
 
 .arrow-down{
 	width: 100%;
-	margin-top: 500px;
+	margin-top: 200px;
 	cursor: pointer;
 }
 .arrow-down span{

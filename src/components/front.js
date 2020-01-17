@@ -1,6 +1,8 @@
 import React from 'react';
 import Particles from 'react-particles-js'
 import { Link, animateScroll as scroll } from "react-scroll";
+import { Typewriting } from 'react-typewriting'
+
 
 const particlesOptions = {
   particles: {
@@ -35,6 +37,7 @@ export default class Front extends React.Component{
     }
 
   }
+  
 
 
 	render(){
@@ -124,9 +127,26 @@ export default class Front extends React.Component{
           </div>
         </div>
 
+        
+
 				<Particles className='particles' params={particlesOptions} />
         <div className="frontContent">
-          
+          <Typewriting
+              strings={[
+                  'Hello, My name is /wAndreas Sujono',
+                  'Hello, I am a /wStudent',
+                  'Hello, I am a /wWeb Developer',
+                  'Hello, I am a /wFull Stack Developer',
+              ]}
+              waitBeforeDeleteMs='4000'
+          >
+              {({ currentText, fullCurrentText }: TypewritingRenderArgs) => (
+                  <h2 className="type" aria-label={fullCurrentText}>
+                    {currentText.split('/w')[0]}
+                    <span style={{color:'white'}}>{currentText.split('/w')[1]}</span>
+                    </h2>
+              )}
+          </Typewriting>
         </div>
         
         <div className="arrow-down">
