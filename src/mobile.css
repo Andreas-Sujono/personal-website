@@ -1,0 +1,52 @@
+@media Screen  and (max-width:760px){
+    #front .header{
+        font-size: 22px;
+    }
+    .about .side-right .main-right{
+        font-size: 16px;
+    }
+    .about .header{
+        font-size: 30px;
+        margin-bottom: -20px;
+    }
+    .about .side-left .photo img{
+        width: 250px;
+        height:250px;
+    }
+
+    .projects .header{
+        font-size: 30px;
+        margin-bottom: -20px;
+    }
+
+    .windowAppear .content h2{
+        font-size: 22px;
+    }
+    .windowAppear .content p {
+        font-size: 16px;
+    }
+
+    .middleContent .text{
+        font-size: 24px;
+        padding:30px 0 0 0;
+    }
+
+    .skills .header{
+        font-size: 30px;
+    }
+
+    .skills .skillList{
+        font-size: 16px;
+    }
+    .skills .skillImage .logo{
+        top:45%;
+        left:30%;
+    }
+    .footer h2{
+        font-size: 30px;
+    }
+    .footer .bottom{
+        font-size: 14px;
+    }
+
+}
