@@ -1,4 +1,4 @@
-Personal Wesbite V1
+Personal Website V1
 ========
 
 This is version 1 of my personal website
